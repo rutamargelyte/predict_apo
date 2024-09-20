@@ -415,7 +415,6 @@
       tm_fill("grey", first=TRUE)+
       tm_shape(sp_b_msoa11_sf) +
       tm_fill(c("inla0_ssre"),midpoint = 0, colorNA = "grey", title = "SSRE", palette = "-RdBu",breaks = c(-Inf,-0.4,-0.3,-0.2,-0.1,0,0.1,0.2,0.3,0.4,+Inf))+ 
-      #breaks = c(-Inf,0.5,0.6,0.7,0.8,0.9,1,1.1,1.2,1.3,1.4,1.5,+Inf)) + #breaks = c(-Inf,-0.25,-0.1,-0.05,0,0.05,0.1,0.25,+Inf)) +  
       tm_layout(legend.outside=F, legend.position = c("left","top"), panel.labels = c("England - preterm birth - unadjusted INLA (MSOA)"),
                 panel.label.size=1.5, legend.text.size=1.3,legend.title.size=1.5) +
       tm_shape(sp_b_rgn17) +
@@ -439,7 +438,7 @@
       tm_fill("grey", first=TRUE)+
       tm_shape(sp_b_msoa11_sf) +
       tm_fill(c("inla0_ssre_int"),  title = "95%CI (SSRE)", 
-              palette = "Blues",breaks = c(-Inf,0.45,0.5,0.55,0.6,0.65,0.7,+Inf)) +  #,breaks = c(-Inf,1.0,1.1,1.2,1.3,1.4,+Inf))+
+              palette = "Blues",breaks = c(-Inf,0.45,0.5,0.55,0.6,0.65,0.7,+Inf)) +  
       tm_layout(legend.outside=F, legend.position = c("left","top"), panel.labels = c("England - preterm birth - unadjusted INLA (MSOA)"),
                 panel.label.size=1.5, legend.text.size=1.3,legend.title.size=1.5) +
       tm_shape(sp_b_rgn17) +
@@ -468,7 +467,7 @@
     
     
     
-#save the workspace#############################################################
+#save workspace#############################################################
     
     rm(list=setdiff(ls(), c("dfprep", 
                             "inla_iidre_msoa","inla_iidre_msoa_0","inla_iidre_msoa_0m","inla_iidre_msoa_m",
