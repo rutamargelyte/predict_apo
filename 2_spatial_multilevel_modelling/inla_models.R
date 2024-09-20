@@ -364,7 +364,7 @@
     # Print the final results
     print(results_fit)
     
-#merge and export results - predictive performance and fit######################
+#merge results - predictive performance and fit#################################
     
     results_pred$row_id <- 1:nrow(results_pred)
     results_fit$row_id <- 1:nrow(results_fit)
