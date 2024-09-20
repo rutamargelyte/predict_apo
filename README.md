@@ -13,5 +13,5 @@ Directory: 2_spatial_multilevel_modelling
 Scripts: 
 
 inla_models.R - fitting Bayesian hierachical models (MSOA level) for preterm birth below 37 weeks gestation with and without spatial dependancies;
-                output: 1 table with predictive performance and model fit for 4 models (unadjusted and adjusted with IIDRE or SSRE); 
-                output: 3 plots - undjusted MSOA level spatially structured random effects (SSRE) in England (point estimates, significance, and 95%CI width)
+                output: 1 table with predictive performance and fit for 4 models (unadjusted and adjusted with IIDRE or SSRE); 
+                output: 3 plots from unadjusted SSRE model (point estimates, significance, and 95%CI width)
