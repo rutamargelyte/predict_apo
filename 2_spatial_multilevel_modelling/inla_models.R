@@ -333,14 +333,6 @@
     results_fit<- data.frame(modelname_unmasked = character(), cpo = numeric(), dic = numeric(), waic = numeric(), mlik = numeric(), 
                              var = numeric(), varupperci = numeric(), varlowerci = numeric(), stringsAsFactors = FALSE)
     
-    # model$summary.hyperpar
-    # inla_ss2m$summary.hyperpar$mean #prec mean
-    # inla_ss2m$summary.hyperpar$sd #prec sd
-    # 1/inla_ss2m$summary.hyperpar$mean #var
-    # sqrt(1/inla_ss2m$summary.hyperpar$mean) #sd
-    # exp(sqrt(1/inla_ss2m$summary.hyperpar$mean)) #exp sd
-    # 
-    # 
 
     # Loop through each model to calculate cpo,waic,mlik,dic, and random effect variance
     for (i in seq_along(models)) {
